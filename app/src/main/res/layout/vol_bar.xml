@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/vol_text_layout"
+        android:layout_width="56dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_vol_label"
+            android:layout_width="match_parent"
+            android:layout_height="38.6dp"
+            android:background="@raw/vol_label"
+            />
+
+        <TextView
+            android:id="@+id/vol_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/trans_half_white"
+            />
+
+    </FrameLayout>
+<!--
+<SeekBar
+        android:id="@+id/sb_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:rotation="270"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/vol_text_layout"/>
+-->
+
+    <com.lin.dlivkfragment.view.VerticalSeekBar
+        android:id="@+id/sb_vol"
+        android:layout_width="45dp"
+        android:layout_height="300dp"
+        android:layout_toEndOf="@id/vol_text_layout"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/layerlist_playback_seekbar"
+        android:thumb="@drawable/selector_playback_seekbar_thumb"
+        />
+
+
+
+</RelativeLayout>

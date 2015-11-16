@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lin.dlivkfragment" >
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.xiaopeng.home.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.xiaopeng.home.permission.WRITE_SETTINGS" />
+
+
+    <!--<uses-permission android:name="android.permission.BIND_APPWIDGET" />-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.receive_boot_completed" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MusicApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bb6c88db23c53fadd465fbb1ac6d5080" />
+        <activity
+            android:theme="@style/Theme"
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activity.IatDemo"
+            android:theme="@style/Theme.Swipe.Back"
+            />
+        <activity android:name=".activity.NaviPrepare"
+            android:theme="@style/Theme.Swipe.Back"/>
+        <activity android:name=".activity.SeachNeigh"
+            android:theme="@style/Theme.Swipe.Back"/>
+        <activity android:name=".activity.MapSetting"
+            android:theme="@style/Theme.Swipe.Back"/>
+        <activity android:name=".activity.OfflineMapActivity"
+            android:theme="@style/Theme.Swipe.Back"/>
+        <service android:name=".service.OfflineMapService"/>
+
+        <!--<music>-->
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <service
+            android:name=".service.MediaService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.lin.dlivkfragment.service.MediaService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.MusicListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.AddToListActivty"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.AddListActivity"
+            android:label="@string/title_activity_add_list"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+
+        <receiver android:name=".appwidget.MusicWidget"
+            android:label="MusicPlayer">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action android:name="com.xiaopeng.widget.UPDATE_ALL"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/music_widget_info"/>
+        </receiver>
+
+        <receiver android:name=".appwidget.MusicWidgetReceiver">
+            <intent-filter>
+                <action android:name="com.xiaopeng.widget.start1"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".appwidget.MusicWidgetStop">
+            <intent-filter>
+                <action android:name="com.xiaopeng.widget.stop1"/>
+
+            </intent-filter>
+
+        </receiver>
+
+
+
+    </application>
+
+</manifest>

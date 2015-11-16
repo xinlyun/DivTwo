@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyFloatActionButton">
+        <attr name = "cir_icon" format="reference"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MyFloatActionMenu">
+        <attr name="mfam_width" format="dimension"/>
+        <attr name="mfam_icon" format="reference"/>
+        <attr name="mfam_posi" format="enum">
+            <enum name="left_top" value="0"/>
+            <enum name="left_bottom" value="1"/>
+            <enum name="right_top" value="2"/>
+            <enum name="right_bottom" value="3"/>
+        </attr>
+    </declare-styleable>>
+</resources>

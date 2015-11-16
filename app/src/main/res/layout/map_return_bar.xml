@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#393b3c"
+    android:id="@+id/sticky_header"
+    android:layout_height="120dp">
+    <!--<TextView-->
+        <!--android:id="@+id/btn_return_bar"-->
+        <!--android:background="#50000000"-->
+        <!--android:textColor="#90ffffff"-->
+        <!--android:textSize="50dp"-->
+        <!--android:gravity="center"-->
+        <!-- -->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="120dp" />-->
+    <TextView
+
+        android:layout_gravity="center"
+        android:text="设置"
+        android:id="@+id/btn_return_bar_title"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+    <ImageView
+        android:id="@+id/btn_return_bar"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/b66_03"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaopeng.musicplayer.activity.MusicListActivity"
+    android:background="@raw/bg_list"
+    android:orientation="vertical">
+    
+    <ImageButton
+        android:id="@+id/ib_list_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@raw/bt_back"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/list_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="77.6dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+        <!--<ImageView-->
+            <!--android:layout_width="48.3dp"-->
+            <!--android:layout_height="48.3dp"-->
+            <!--android:background="@raw/iv_list"-->
+            <!--android:layout_gravity="center_vertical"/>-->
+
+        <TextView
+            android:id="@+id/tv_music_lists"
+            android:text="@string/music_lists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:maxWidth="400dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_select_all"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp"
+        android:background="@raw/bt_select_all"/>
+
+    <!-- android:layout_height="7.7dp"-->
+    <ImageView
+        android:id="@+id/orange_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/trans_half_orange"
+        android:layout_below="@id/list_top_layout"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.4dp"
+        android:layout_marginBottom="120dp"
+        android:layout_below="@id/orange_line">
+
+        <ListView
+            android:id="@+id/music_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ListView
+            android:id="@+id/music_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:id="@+id/bt_add_list"
+            android:layout_width="473.3dp"
+            android:layout_height="61.8dp"
+            android:background="@drawable/selector_bt_add_list" />
+
+        <ImageButton
+            android:id="@+id/bt_delete_selected"
+            android:layout_width="473.3dp"
+            android:layout_height="61.8dp"
+            android:background="@drawable/selector_bt_delete_list" />
+
+    </FrameLayout>
+
+</RelativeLayout>

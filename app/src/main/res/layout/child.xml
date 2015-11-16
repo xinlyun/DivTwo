@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:background="#90182d4e"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+
+        android:layout_marginLeft="90dp"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_weight="1" />
+
+     <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/collapse"
+        android:visibility="gone" />
+    <TextView
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginRight="0dp"
+        android:textColor="#ffffff"
+        android:id="@+id/distance"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="60dp" />
+
+     <!--<Button-->
+         <!--android:textSize="80dp"-->
+         <!--android:id="@+id/button1"-->
+         <!--android:layout_width="0dp"-->
+         <!--android:layout_height="130dp"-->
+         <!--android:layout_weight="1"-->
+         <!--android:text="Button" />-->
+
+</LinearLayout>

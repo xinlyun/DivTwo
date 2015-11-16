@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="99.5dp"
+    android:minHeight="99.5dp">
+
+    <ImageView
+        android:id="@+id/iv_playlist_state"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@raw/iv_play_state"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/trans_fuck_white"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_playlist_state"
+        android:layout_marginStart="16.3dp"
+        android:maxWidth="500dp"/>
+
+    <ImageView
+        android:layout_width="36.7dp"
+        android:layout_height="36.7dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:background="@raw/iv_enter_list" />
+
+</RelativeLayout>
+
+
+

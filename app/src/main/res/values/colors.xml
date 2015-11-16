@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- The color tints to apply to the text and drag view when hovering
+         over the delete target or the info target -->
+    <color name="delete_target_hover_tint">#DAFF0000</color>
+    <color name="info_target_hover_tint">#DA0099CC</color>
+
+    <color name="bubble_dark_background">#20000000</color>
+
+    <color name="appwidget_error_color">#FCCC</color>
+
+    <color name="workspace_all_apps_and_delete_zone_text_color">#CCFFFFFF</color>
+    <color name="workspace_all_apps_and_delete_zone_text_shadow_color">#A0000000</color>
+    <color name="workspace_icon_text_color">#FFF</color>
+
+
+    <!---linzx  -->
+    <color name="grey"> #ebebeb</color>
+    <color name="black"> #000000</color>
+    <color name="darkgrey"> #C0C0C0</color>
+    <color name="white"> #FFFFFF</color>
+    <color name="red"> #FF0000</color>
+    <color name="darkyellow"> #FFCC33</color>
+
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#0066dd</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="trans">#50000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="mygrey">#888687</color>
+    <color name="naviblue">#009cff</color>
+
+    <color name="setting_text_true">#000000</color>
+    <color name="setting_text_false">#888687</color>
+    <color name="setting_text_bg_true">#888687</color>
+    <color name="setting_text_bg_false">#00000000</color>
+
+
+    <color name="trans_white">#11ffffff</color>
+    <color name="trans_black">#88000000</color>
+    <color name="trans_half_white">#88ffffff</color>
+    <color name="trans_fuck_white">#ccffffff</color>
+    <color name="seekbar_yellow">#db7c00</color>
+    <color name="trans_white_lrc">#30ffffff</color>
+    <color name="trans_half_orange">#88ffa800</color>
+
+</resources>

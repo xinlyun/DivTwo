@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="15dp"
+    android:background="#cc182d4e">
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:id="@+id/group"
+        android:textSize="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="150dp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:text="精品推荐" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/collapse"
+        android:visibility="gone" />
+
+</RelativeLayout>

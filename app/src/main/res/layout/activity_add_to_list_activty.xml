@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaopeng.musicplayer.activity.MusicListActivity"
+    android:background="@raw/bg_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_to_list_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="77.3dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <!--<ImageView-->
+            <!--android:layout_width="48.3dp"-->
+            <!--android:layout_height="48.3dp"-->
+            <!--android:background="@raw/bt_add2list"-->
+            <!--android:layout_gravity="center_vertical"/>-->
+
+        <TextView
+            android:text="@string/add_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginStart="15dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_to_list_orange_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/trans_half_orange"/>
+
+    <ListView
+        android:id="@+id/lv_add_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.4dp"
+        android:layout_marginBottom="14.4dp"/>
+
+</LinearLayout>

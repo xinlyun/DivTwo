@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_now_time"
+        android:text="@string/default_time"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+<!--android:progressDrawable="@drawable/layerlist_playback_seekbar"-->
+    <!-- android:thumbOffset="44dp"-->
+    <SeekBar
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/sb_process"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/layerlist_playback_seekbar"
+        android:thumb="@drawable/selector_playback_seekbar_thumb"
+        />
+
+    <!-- android:progressDrawable="@drawable/layerlist_playback_seekbar"
+        android:thumb="@drawable/selector_playback_seekbar_thumb"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_total_time"
+        android:text="@string/default_time"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+</LinearLayout>

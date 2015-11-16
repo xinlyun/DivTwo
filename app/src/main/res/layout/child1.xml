@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/xianshi_15"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:id="@+id/name2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/collapse"
+        android:visibility="gone" />
+
+
+</LinearLayout>
